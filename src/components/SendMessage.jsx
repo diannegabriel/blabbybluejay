@@ -4,8 +4,10 @@ import { useState } from "react";
 const SendMessage = () => {
   const [value, setValue] = useState("");
 
-  const handleSendMessage = () => {
+  const handleSendMessage = (e) => {
+    e.preventDefault();
     console.log(value);
+    setValue("");
   };
 
   return (
