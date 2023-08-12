@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <nav>
+      <div className="navbar bg-primary text-primary-content">
+        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
