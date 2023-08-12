@@ -4,7 +4,7 @@ const SendMessage = () => {
   return (
     <div className="bg-gray-200 fixed bottom-0 w-full py-10 shadow-lg">
       <form className="container-wrap">
-        <input className="input" type="text" />
+        <input className="input w-full focus:outline-none bg-gray-100 rounded-r-none" type="text" />
         <button>Send</button>
       </form>
     </div>
