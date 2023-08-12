@@ -1,6 +1,8 @@
 import React from 'react'
+import { useState } from 'react'
 
 const SendMessage = () => {
+  const [value, setValue] = useState("");
   return (
     <div className="bg-gray-200 fixed bottom-0 w-full py-10 shadow-lg">
       <form className="container-wrap flex">
