@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="container-wrap navbar bg-primary text-primary-content">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <nav className="navbar bg-primary text-primary-content">
+      <div className="container-wrap">
+        <a className="btn btn-ghost normal-case text-xl">Blabby Blue Jay</a>
       </div>
     </nav>
   );
