@@ -3,10 +3,11 @@ import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { PrivateRoute } from "./routes/PrivateRoute";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
@@ -19,7 +20,7 @@ function App() {
           }
         />
       </Routes>
-    </div>
+    </AuthProvider>
   );
 }
 
