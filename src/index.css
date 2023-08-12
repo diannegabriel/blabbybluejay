@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   background-color: white;
+} */
+
+.container-wrap {
+  @apply container mx-auto max-w-4xl
 }
