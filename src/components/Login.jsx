@@ -1,6 +1,8 @@
 import React from "react";
+import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
+  const { currentUser } = UserAuth();
   return (
     <div>
       <div className="hero h-[90vh] bg-slate-300">
