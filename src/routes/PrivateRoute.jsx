@@ -1,9 +1,11 @@
 import React from 'react'
+import { Navigate } from "react-router-dom";
 
 export const PrivateRoute = ({ children }) => {
-  return (
-    <div>
-      
-    </div>
-  )
+  const currentUser = false;
+
+  if (!currentUser) {
+    return <Navigate to="/" replace={true} />
+  }
+  return children
 }
