@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Login />
+      {/* <Login /> */}
       <ChatRoom />
     </div>
   );
