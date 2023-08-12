@@ -8,7 +8,8 @@ const Login = () => {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold text-blue-800">Hey there!</h1>
             <p className="py-6 text-zinc-700">
-              Chat with Blue Jays fans in real-time. Trade talks? Game day? Post season? Come by and chill!
+              Chat with Blue Jays fans in real-time. Trade talks? Game day? Post
+              season? Come by and chill!
             </p>
             <button className="btn btn-primary">Start Blabbing!</button>
           </div>
