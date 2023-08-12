@@ -10,7 +10,7 @@ const Message = ({ message }) => {
           </div>
         </div>
         <div className="chat-header">
-          Obi-Wan Kenobi
+          {message.author}
           <time className="text-xs opacity-50">12:45</time>
         </div>
         <div className="chat-bubble">{message.text}</div>
