@@ -3,9 +3,9 @@ import React from 'react'
 const SendMessage = () => {
   return (
     <div className="bg-gray-200 fixed bottom-0 w-full py-10 shadow-lg">
-      <form className="container-wrap">
+      <form className="container-wrap flex">
         <input className="input w-full focus:outline-none bg-gray-100 rounded-r-none" type="text" />
-        <button>Send</button>
+        <button className="w-auto bg-gray-500 text-white rounded-r-lg px-5 text-sm">Send</button>
       </form>
     </div>
   )
