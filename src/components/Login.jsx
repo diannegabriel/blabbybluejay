@@ -7,11 +7,12 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      await signInGoogle
+      await signInGoogle();
     } catch(error) {
       console.log(error)
     }
   }
+
   return (
     <div>
       <div className="hero h-[90vh] bg-slate-300">
