@@ -7,6 +7,8 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
+  // Sign in with Google
+  const signInGoogle = new GoogleAuthProvider();
 
   const value = {
     currentUser,
