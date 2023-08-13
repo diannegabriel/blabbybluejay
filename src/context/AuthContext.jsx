@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { GoogleAuthProvider, getAuth, signInWithRedirect } from "firebase/auth";
+import { auth } from "../firebase";
 
 // The purpose of this is to get the current value (the user) at any page
 const AuthContext = createContext();
