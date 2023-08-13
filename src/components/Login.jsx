@@ -2,8 +2,16 @@ import React from "react";
 import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
-  const { currentUser } = UserAuth();
+  const { currentUser, signInGoogle } = UserAuth();
   console.log(currentUser)
+
+  const handleLogin = async () => {
+    try {
+      await signInGoogle
+    } catch(error) {
+      console.log(error)
+    }
+  }
   return (
     <div>
       <div className="hero h-[90vh] bg-slate-300">
@@ -14,7 +22,7 @@ const Login = () => {
               Chat with Blue Jays fans in real-time. Trade talks? Game day? Post
               season? Come by and chill!
             </p>
-            <button className="btn btn-primary">Start Blabbing!</button>
+            <button onClick={handleLogin} className="btn btn-primary">Start Blabbing!</button>
           </div>
         </div>
       </div>

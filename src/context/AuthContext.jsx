@@ -16,6 +16,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     currentUser,
     setCurrentUser,
+    signInGoogle
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
