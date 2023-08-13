@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { GoogleAuthProvider, getAuth, signInWithRedirect } from "firebase/auth";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import { auth } from "../firebase";
 
 // The purpose of this is to get the current value (the user) at any page
@@ -8,10 +8,10 @@ export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
   // Sign in with Google
-  const signInGoogle = new GoogleAuthProvider();
-
-  const auth = getAuth();
-  signInWithRedirect(auth, signInGoogle);
+  const signInGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithRedirect(auth, provider);
+  };
 
   const value = {
     currentUser,
