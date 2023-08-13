@@ -1,6 +1,7 @@
 import React from "react";
 
 const Message = ({ message }) => {
+  console.log(message.time)
   return (
     <div>
       <div className="chat chat-start">
