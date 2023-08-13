@@ -9,6 +9,11 @@ const SendMessage = () => {
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
+
+    if(value.trim() === "") {
+      alert("Please enter a message.")
+      return;
+    }
     try {
       const { uid, displayName, photoURL } = currentUser;
       await addDoc(collection(db, "messages"), {
