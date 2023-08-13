@@ -11,7 +11,7 @@ const Message = ({ message }) => {
         </div>
         <div className="chat-header">
           {message.name}
-          <time className="text-xs opacity-50"></time>
+          <time className="text-xs opacity-50">{new Date(message.createdAt.seconds*1000).toLocaleString()}</time>
         </div>
         <div className="chat-bubble">{message.text}</div>
       </div>
