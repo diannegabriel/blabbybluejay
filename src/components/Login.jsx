@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
+  const navigate = useNavigate();
   const { currentUser, signInGoogle } = UserAuth();
   console.log(currentUser);
 
