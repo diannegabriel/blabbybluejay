@@ -21,8 +21,8 @@ const Message = ({ message }) => {
           }`}
         >
           {message.name}
-          <time className="text-xs text-[#3d3f43a0] pb-1">
-            {new Date(message.createdAt.seconds * 1000).toLocaleString()}
+          <time className="text-xs text-[#3d3f43a0]">
+            {/* {new Date(message.createdAt.seconds * 1000).toLocaleString()} */}
           </time>
         </div>
         <div className="chat-bubble">{message.text}</div>
