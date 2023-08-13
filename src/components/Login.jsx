@@ -3,6 +3,7 @@ import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
   const { currentUser } = UserAuth();
+  console.log(currentUser)
   return (
     <div>
       <div className="hero h-[90vh] bg-slate-300">
