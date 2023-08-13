@@ -16,13 +16,12 @@ const Message = ({ message }) => {
           </div>
         </div>
         <div
-          className={`chat-header flex flex-col ${
+          className={`chat-header flex flex-col text-[#3c5488] ${
             message.uid === currentUser.uid ? "items-end" : ""
           }`}
         >
-          {/* // "chat-header flex flex-col	items-baseline gap-x-1.5" */}
           {message.name}
-          <time className="text-xs opacity-50">
+          <time className="text-xs text-[#3d3f43a0] pb-1">
             {new Date(message.createdAt.seconds * 1000).toLocaleString()}
           </time>
         </div>
