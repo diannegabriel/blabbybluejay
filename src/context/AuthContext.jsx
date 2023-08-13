@@ -26,6 +26,7 @@ export const AuthProvider = ({ children }) => {
     currentUser,
     setCurrentUser,
     signInGoogle,
+    logOut
   };
 
   // Set current user
