@@ -16,20 +16,19 @@ const SendMessage = () => {
       return;
     }
     try {
-      const { uid, displayName, photoURL } = currentUser;
+      const { uid, displayName, photoURL } = currentUser; 
       await addDoc(collection(db, "messages"), {
         text: value,
         name: displayName,
         avatar: photoURL,
-        createdAt: serverTimestamp,
+        createdAt: serverTimestamp(),
         uid
       })
     } catch(error) {
-      console.log(error)
+      console.log(error);
     }
-    console.log(value);
     setValue("");
-  };
+  }  
 
   return (
     <div className="bg-gray-200 fixed bottom-0 w-full py-10 shadow-lg">
