@@ -10,9 +10,17 @@ import {
 import { useEffect } from "react";
 import { db } from "../firebase";
 import { useState } from "react";
+import { useRef } from "react";
 
 const ChatBox = () => {
+  const messagesEndRef = useRef();
   const [messages, setMessages] = useState([]);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(scrollToBottom, [messages]);
 
   // Grab the messages from Firestore db
   useEffect(() => {
@@ -38,6 +46,7 @@ const ChatBox = () => {
       {messages.map((message) => (
         <Message key={message.id} message={message} />
       ))}
+      <div ref={messagesEndRef}></div>
     </div>
   );
 };
