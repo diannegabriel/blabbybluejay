@@ -1,17 +1,19 @@
 import React from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 const Login = () => {
   const { currentUser, signInGoogle } = UserAuth();
-  console.log(currentUser)
+  console.log(currentUser);
 
   const handleLogin = async () => {
     try {
       await signInGoogle();
-    } catch(error) {
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
 
   return (
     <div>
@@ -23,7 +25,9 @@ const Login = () => {
               Chat with Blue Jays fans in real-time. Trade talks? Game day? Post
               season? Come by and chill!
             </p>
-            <button onClick={handleLogin} className="btn btn-primary">Start Blabbing!</button>
+            <button onClick={handleLogin} className="btn btn-primary">
+              Start Blabbing!
+            </button>
           </div>
         </div>
       </div>
