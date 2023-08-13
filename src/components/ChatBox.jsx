@@ -6,19 +6,19 @@ import { db } from "../firebase";
 import { useState } from "react";
 
 const ChatBox = () => {
-  const [messagesm, setMessages] = useState([]);
-  const messages = [
-    {
-      id: 1,
-      text: "Blue jays forever!",
-      author: "Maple",
-    },
-    {
-      id: 2,
-      text: "Big fan from Toronto.",
-      author: "Leafs",
-    },
-  ];
+  const [messages, setMessages] = useState([]);
+  // const messages = [
+  //   {
+  //     id: 1,
+  //     text: "Blue jays forever!",
+  //     author: "Maple",
+  //   },
+  //   {
+  //     id: 2,
+  //     text: "Big fan from Toronto.",
+  //     author: "Leafs",
+  //   },
+  // ];
 
   // Grab the messages from Firestore db
   useEffect(() => {
@@ -29,7 +29,7 @@ const ChatBox = () => {
         messages.push({ ...doc.data(), id: doc.id });
         // console.log(doc.data());
       });
-      console.log(messages);
+      setMessages(messages);
     });
     return () => unsubscribe;
   }, []);
