@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar bg-primary text-primary-content">
       <div className="container-wrap flex justify-between">
         <a className="btn btn-ghost normal-case text-xl">Blabby Blue Jay</a>
-        <button>Logout</button>
+        <button onClick={handleLogOut}>Logout</button>
       </div>
     </nav>
   );
