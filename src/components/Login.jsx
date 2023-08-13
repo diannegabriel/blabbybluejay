@@ -16,6 +16,12 @@ const Login = () => {
     }
   };
 
+  useEffect(() => {
+    if (currentUser) {
+      navigate("/chat")
+    }
+  }, [currentUser]);
+
   return (
     <div>
       <div className="hero h-[90vh] bg-slate-300">
