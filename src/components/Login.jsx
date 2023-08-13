@@ -16,6 +16,7 @@ const Login = () => {
     }
   };
 
+  // This will redirect the user to the /chat page when logged in
   useEffect(() => {
     if (currentUser) {
       navigate("/chat")
