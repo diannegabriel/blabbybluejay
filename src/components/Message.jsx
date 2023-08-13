@@ -9,7 +9,7 @@ const Message = ({ message }) => {
             <img src={message.avatar} />
           </div>
         </div>
-        <div className="chat-header">
+        <div className="chat-header flex flex-col	items-baseline gap-x-1.5">
           {message.name}
           <time className="text-xs opacity-50">{new Date(message.createdAt.seconds*1000).toLocaleString()}</time>
         </div>
