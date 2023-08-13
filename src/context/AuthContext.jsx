@@ -12,6 +12,7 @@ import { useEffect } from "react";
 const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   // Sign in with Google
   const signInGoogle = () => {
@@ -26,18 +27,19 @@ export const AuthProvider = ({ children }) => {
     currentUser,
     setCurrentUser,
     signInGoogle,
-    logOut
+    logOut,
   };
 
   // Set current user
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
+      setLoading(false);
     });
     return unsubscribe;
   }, []);
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>;
 };
 
 export const UserAuth = () => {
