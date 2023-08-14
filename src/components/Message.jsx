@@ -16,12 +16,12 @@ const Message = ({ message }) => {
           </div>
         </div>
         <div
-          className={`chat-header flex flex-col text-[#3c5488] ${
-            message.uid === currentUser.uid ? "items-end" : ""
-          }`}
+          className={`chat-header flex text-[#3c5488] items-center gap-2
+        ${message.uid === currentUser.uid ? "flex-row-reverse	" : ""}
+        `}
         >
-          {message.name}
-          <time className="text-xs text-[#3d3f43a0]">
+          <span className="font-semibold text-base">{message.name}</span>
+          <time className="text-xs text-[#8f8f8f]">
             {message.createdAt?.seconds
               ? new Date(message.createdAt.seconds * 1000).toLocaleString()
               : null}
