@@ -1,5 +1,6 @@
 import React from "react";
 import { UserAuth } from "../context/AuthContext";
+import { formatRelative } from 'date-fns';
 
 const Message = ({ message }) => {
   const { currentUser } = UserAuth();
@@ -22,7 +23,6 @@ const Message = ({ message }) => {
         >
           {message.name}
           <time className="text-xs text-[#3d3f43a0]">
-            {/* {new Date(message.createdAt.seconds * 1000).toLocaleString()} */}
           </time>
         </div>
         <div className="chat-bubble">{message.text}</div>

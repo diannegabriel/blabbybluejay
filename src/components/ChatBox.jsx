@@ -7,10 +7,8 @@ import {
   orderBy,
   limit,
 } from "firebase/firestore";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { db } from "../firebase";
-import { useState } from "react";
-import { useRef } from "react";
 
 const ChatBox = () => {
   const messagesEndRef = useRef();
