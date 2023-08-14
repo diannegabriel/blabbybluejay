@@ -16,7 +16,7 @@ const Message = ({ message }) => {
           </div>
         </div>
         <div
-          className={`chat-header flex text-[#3c5488] items-center gap-2
+          className={`chat-header flex text-[#1d2d5c] items-center gap-2
         ${message.uid === currentUser.uid ? "flex-row-reverse	" : ""}
         `}
         >
@@ -27,7 +27,7 @@ const Message = ({ message }) => {
               : null}
           </time>
         </div>
-        <div className="chat-bubble">{message.text}</div>
+        <div className="chat-bubble bg-[#1d2d5c] text-[#e1e1e1]">{message.text}</div>
       </div>
     </div>
   );

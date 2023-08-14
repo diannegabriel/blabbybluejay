@@ -32,7 +32,7 @@ const SendMessage = () => {
   
 
   return (
-    <div className="bg-gray-200 fixed bottom-0 w-full py-10 shadow-lg">
+    <div className="bg-gray-200 fixed bottom-0 w-full py-10 px-10 shadow-lg">
       <form onSubmit={handleSendMessage} className="container-wrap flex px-">
         <input
           value={value}
