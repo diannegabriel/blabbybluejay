@@ -1,14 +1,22 @@
-# React + Vite
+# Blabby Blue Jay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Connect instantly with fellow Blue Jays fans using the Blabby Blue Jay real-time chat app! Engage in spirited conversations, share your predictions, and relive unforgettable moments that define the Toronto Blue Jays experience.
 
-Currently, two official plugins are available:
+Live website: [Blabby Blue Jay](https://blabbybluejay.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Future Developments
 
-### Tech Stack
+- Make mobile friendly
+- Add GIF and emoji keyboard
+- Improve UI
+- Chat bubbles stack when same user sent chat multiple times in a small amount of time
+
+## Tech Stack
 
 - React
 - JavaScript
 - Vite
+- TailwindCSS
+- DaisyUI
+- Firebase
+- Vercel
