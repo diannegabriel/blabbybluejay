@@ -26,8 +26,8 @@ const Login = () => {
       <div className="hero h-screen">
         <div className="hero-content text-center bg-[#111112a0]">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold text-[#1d2d5c]">Hey there!</h1>
-            <p className="py-6 text-zinc-700">
+            <h1 className="text-5xl font-bold text-[#fefefe]">"We're Here!"</h1>
+            <p className="py-6 text-[#aaaaaa]">
               Chat with Blue Jays fans in real-time. Trade talks? Game day? Post
               season? Come by and chill!
             </p>
