@@ -10,6 +10,7 @@ Live website: [Blabby Blue Jay](https://blabbybluejay.vercel.app/)
 - Add GIF and emoji keyboard
 - Improve UI
 - Chat bubbles stack when same user sent chat multiple times in a small amount of time
+- Add loading icon
 
 ## Tech Stack
 
